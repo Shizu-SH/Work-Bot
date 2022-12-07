@@ -25,13 +25,34 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-Aqui escribes lo que quieras
-si quieres ver un bot acabado contacta a este numero
-wa.me/56993107838
+Para que sirve un Bot de WhatsApp?
+Muy simple, te ayudara a hacer crecer tu negocio de manera mas rapida y eficaz,
+cuenta con mensajes automatizados y programados con una velocidad de respuesta de menos de 1 segundo.
+Por ejemplo ahora mismo estas hablando con un bot de WhatsApp.
+
+Que prefijos puedo usar?
+El bot funciona con prefijo o sin prefijo.
+por ejemplo el comando .menu
+cuando tu escribes eso es para ver todas las funciones disponibles del bot.
+puedes escribir .menu o solamente menu o /menu, eso lo personalizas a tu gusto.
+
+Cuantos comandos le puedo poner?
+Le puedes agregar todos los que quieras, aunque eso cambiara el precio inicial del bot.
+tienes comandos gratuitos por ejemplo:
+Descargas de Videos o Apk
+Gestion de grupos
+Hacer stickers mandando foto
+y mucho mas
+Algunas funciones no le seran de mucha utilidad, esas funciones que no cumplan con sus ideales pueden ser eliminados
+Para gregar comandos personalizados deberas hablar con mi creador.
+
+Para mas dudas contacteme aqui
+wa.me/34623442554
+
 `.trim()
 let buttons = [
-{ buttonId: '#boton1', buttonText: { displayText: 'BOTON 1' }, type: 1 },
-{ buttonId: '#granbot', buttonText: { displayText: 'Ver bot acabado' }, type: 1 }]
+{ buttonId: '#owner', buttonText: { displayText: 'CREADOR' }, type: 1 },
+{ buttonId: '#empresa', buttonText: { displayText: 'USAR BOT' }, type: 1 }]
 //{ buttonId: '#infobot', buttonText: { displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾' }, type: 1 }]
 let buttonMessage = {
 image: pp,
@@ -56,7 +77,7 @@ conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 } catch {
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 }}
-handler.command = /^(boton1)$/i
+handler.command = /^(informacionbot)$/i
 handler.exp = 50
 handler.fail = null
 export default handler
