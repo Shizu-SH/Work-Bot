@@ -12,8 +12,9 @@ let time = d.toLocaleTimeString(locale, {
 let _uptime = process.uptime() * 1000
 let datcov = await fetch('https://latam-api.vercel.app/api/covid19?apikey=nekosmic&q=world');
 	let CovidApi = await datcov.json();
-	var cotext = `┏「 texto en otro color 」┓
-┃➲ aqui puedes poner la marca de la empresa
+	var cotext = `┏「 Work Bot 」┓
+┃➲ Work-Bot
+┃➲ Las Palmas GC
 ┗─━─━「 🌎 」━─━─┛\n\n`
 let uptime = clockString(_uptime) 
 let totalreg = Object.keys(global.db.data.users).length
@@ -34,29 +35,28 @@ const sections = [
 {
 title: `𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗠𝗘𝗡𝗨𝗦`,
 rows: [
-      {title: "𝗖𝗥𝗘𝗔𝗗𝗢𝗥", description: '𝗖𝗢𝗡𝗧𝗔𝗖𝗧𝗢 𝗗𝗘𝗟 𝗖𝗥𝗘𝗔𝗗𝗢𝗥', rowId: `${usedPrefix}creador`},
-      {title: "Boton 1", description: 'Aqui agregas un boton', rowId: `${usedPrefix}boton1`},
-      {title: "Boton 2", description: 'Aqui agregas un boton', rowId: `${usedPrefix}boton2`},
-      {title: "agrega mas botones", description: 'puedes agregar todos los botones que quieras', rowId: `${usedPrefix}boton1`},
+      {title: "CREADOR", description: 'CONTACTAR CON EL CREADOR DEL BOT', rowId: `${usedPrefix}creador`},
+      {title: "INFORMACION", description: 'INFORMACION DEL BOT', rowId: `${usedPrefix}informacionbot`},
+      {title: "EJEMPLO DE UTILIZACION", description: 'AQUI PODRAS VER COMO SE USA UN BOT', rowId: `${usedPrefix}empresa`},
+      {title: "BOT PARA GRUPOS", description: 'AQUI VERAS COMO UN BOT PUEDE AYUDARTE EN UN GRUPO', rowId: `${usedPrefix}gruposinfo`},
  	]
     },
     {
-        title: "𝗢𝗪𝗡𝗘𝗥",
+        title: "COMPRAR BOT",
 	rows: [
-                {title: "𝗨𝗣𝗗𝗔𝗧𝗘", description: '𝗔𝗖𝗧𝗨𝗔𝗟𝗜𝗭𝗔𝗥 𝗕𝗢𝗧', rowId: `${usedPrefix}update`},
+                {title: "PRECIOS", description: 'AQUI PODRAS VER LOS PRECIOS DEL BOT', rowId: `${usedPrefix}precios`},
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `Este texto es editable!
 *╭─────────────────────❊*
 *│* *╭────────────────❊*
-*│* *│* *Bᴏᴛ Nᴀᴍᴇ :  Shizu - Bot*
-*│* *│* *Creador del Bot: 𝗦𝗵𝗶𝘇𝘂* 
-*│* *│* *N° del creador:* wa.me/34623442554*
-*│* *│* *Apoyame registrandote en esta web*
-*│* *│* *https://tinyurl.com/2jzuzsef*
-*│* *│* *Mis redes: atom.bio/shizu-hub*
-*│* *│* ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+*│* *│* *Bienvenido a mi chat*
+*│* *│* *Aqui te dejare unas funciones* 
+*│* *│* *simples que puedes usar en un bot*
+*│* *│* *Si quieres mas funciones puedes*
+*│* *│* *contactar con mi creador*
+*│* *│* *wa.me/34623442554*
 *│* *╰────────────────❊*
 *│*    *㊏───ɪɴғᴏ───㊏*
 *│* *╭─────────────────❊*
