@@ -3,9 +3,7 @@ let text = `
 Hola, Gracias por contactar con Work Bot🤠
 Te ayudare a comprar las mejores Zapatillas
 Para empezar dinos que marca te gusta mas
-escribe 1 o 2
-1. Nike
-2. Adidas`  
+escribe .nike o .adidas`  
 m.reply(text)   
 }
 handler.command = /^(start)/i
