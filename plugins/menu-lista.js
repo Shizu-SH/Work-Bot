@@ -37,7 +37,7 @@ title: `𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗠𝗘𝗡𝗨𝗦`,
 rows: [
       {title: "CREADOR", description: 'CONTACTAR CON EL CREADOR DEL BOT', rowId: `${usedPrefix}creador`},
       {title: "INFORMACION", description: 'INFORMACION DEL BOT', rowId: `${usedPrefix}informacionbot`},
-      {title: "EJEMPLO DE UTILIZACION", description: 'AQUI PODRAS VER COMO SE USA UN BOT', rowId: `${usedPrefix}empresa`},
+      {title: "EJEMPLO DE UTILIZACION", description: 'AQUI PODRAS VER COMO SE USA UN BOT', rowId: `${usedPrefix}ejemplo`},
       {title: "BOT PARA GRUPOS", description: 'AQUI VERAS COMO UN BOT PUEDE AYUDARTE EN UN GRUPO', rowId: `${usedPrefix}gruposinfo`},
  	]
     },
