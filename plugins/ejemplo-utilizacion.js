@@ -29,14 +29,14 @@ EJEMPLO DE UTILIZACION DEL BOT
 CREANDO AMBIENTE DE COMPRA FALSO...
 ___________________________________
 POR EJEMPLO COMPRARAS UNAS ZAPATILLAS
-ESCRIBE start PARA EMPEZAR CON LA COMPRA DE PRUEBA
+PULSA START PARA EMPEZAR CON LA COMPRA DE PRUEBA
 `.trim()
 let buttons = [
-{ buttonId: '#boton1', buttonText: { displayText: 'BOTON 1' }, type: 1 },
-{ buttonId: '#granbot', buttonText: { displayText: 'Ver bot acabado' }, type: 1 }]
+{ buttonId: '#start', buttonText: { displayText: 'START' }, type: 1 },
+{ buttonId: '#menu', buttonText: { displayText: 'VOLVER AL MENU' }, type: 1 }]
 //{ buttonId: '#infobot', buttonText: { displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾' }, type: 1 }]
 let buttonMessage = {
-image: pp,
+image: null,
 caption: str.trim(),
 mentions: [m.sender],
 footer: `*${wm}*`,
