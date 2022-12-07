@@ -25,8 +25,11 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-si quieres ver un bot acabado contacta a este numero
-wa.me/56993107838
+EJEMPLO DE UTILIZACION DEL BOT
+CREANDO AMBIENTE DE COMPRA FALSO...
+___________________________________
+POR EJEMPLO COMPRARAS UN VUELO DE AVION
+ESCRIBE start PARA EMPEZAR CON LA COMPRA DE PRUEBA
 `.trim()
 let buttons = [
 { buttonId: '#boton1', buttonText: { displayText: 'BOTON 1' }, type: 1 },
