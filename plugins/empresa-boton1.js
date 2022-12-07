@@ -1,8 +1,3 @@
-import fetch from 'node-fetch'
-import fs, { promises } from 'fs'
-let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
-try {
-let vn = './media/menu.mp3'
 import fs from 'fs'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
@@ -27,40 +22,22 @@ let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length 
 let more = String.fromCharCode(8206)
-let readMore = more.repeat(850) 
-let datcov = await fetch('https://latam-api.vercel.app/api/covid19?apikey=nekosmic&q=world');
-	let CovidApi = await datcov.json();
-	var cotext = `┏「 work-bot 」┓
-┃➲ Texto editable
-┗─━─━「 🌎 」━─━─┛\n\n`
+let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
-║    ◉— *Work - BOT* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *𝗛ola, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *Owner:* Shizu-Hub
-║➤ *Numero:* wa.me/34623442554
-║➤ *Bot ofc:* wa.me/5492615130362
-║➤ *PayPal:* https://www.paypal.me/NeKosmicOFC
-║➤ *Fecha:* ${date}
-║➤ *Tiempo activo:* ${uptime}
-║➤ *Usuarios:* ${rtotalreg}
-╰══╡✯✯✯✯✯✯✯✯╞══╯
-el texto de arriba es editable.
-los botones de abajo tambien son editables.
-┗━━━━━━━━━━━━━┛
+Aqui escribes lo que quieras
+si quieres ver un bot acabado contacta a este numero
+wa.me/56993107838
 `.trim()
 let buttons = [
 { buttonId: '#boton1', buttonText: { displayText: 'BOTON 1' }, type: 1 },
-{ buttonId: '#boton 2', buttonText: { displayText: 'BOTON 2' }, type: 1 }]
-//{ buttonId: '#botgrande', buttonText: { displayText: 'VER BOT ACABADO' }, type: 1 }]
+{ buttonId: '#granbot', buttonText: { displayText: 'Ver bot acabado' }, type: 1 }]
+//{ buttonId: '#infobot', buttonText: { displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾' }, type: 1 }]
 let buttonMessage = {
-image: imagen1,
+image: pp,
 caption: str.trim(),
 mentions: [m.sender],
-footer: `*${cotext}*`,
+footer: `*${wm}*`,
 buttons: buttons,
 headerType: 4,
 contextInfo: {
@@ -69,10 +46,10 @@ externalAdReply: {
 showAdAttribution: true,
 mediaType: 'VIDEO',
 mediaUrl: null,
-title: '👑 𝗦𝗛𝗜𝗭𝗨 » 𝗕𝗢𝗧 👑',
+title: '👑 Work Bot 👑',
 body: null,
 thumbnail: img,
-sourceUrl: `https://chat.whatsapp.com/LwPNmhUV8P76isIyFgEK8E`
+sourceUrl: `https://www.paypal.me/NeKosmicOFC`
 }}}
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
